@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.fp-nav~div:not(#nav-results):not(.modal) {
+    margin-top: 5em;
+    padding-bottom: 2em;
+}
+
+.logo-img {
+    height: 1.5em;
+    margin-left: 3vw;
+}
+
+#navpic {
+    object-fit: cover;
+    cursor: pointer;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 1.5em;
+    margin-right: 3vw;
+    margin-left: 1vw;
+}
+
+.navpic {
+    object-fit: cover;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 1.5em;
+}
+
+#nav-search {
+    border: none;
+    outline: none;
+}
+
+#nav-results {
+    margin-top: 4em;
+    /*margin:5em 0 0 3em;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#nav-results a {
+    text-decoration: none;
+    color: inherit
+}
+
+.result-user {
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em 0 1em 0;
+}
+
+.result-user:hover {
+    background-color: white;
+}
+
+.navpic {
+    margin-left: 3vw;
+}
+
+#nav-search {
+    height: 2em;
+    margin-left: 1em;
+    width: 30em;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+    margin: 4vw 0 0 3vw;
+}
+
+#profile-flex {
+    display: flex;
+}
+
+#profile-top {
+    display: flex;
+}
+
+.profile a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
+#profile-info {
+    height: 100%;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+#profile-info p {
+    max-width: 30vw;
+}
+
+.profile-link {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+#profilepic {
+    object-fit: cover;
+    height: 10em;
+    width: 10em;
+}
+
+#burger-menu>* {
+    margin-left: 1vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fp-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 173, 50, 0.30) 0%, rgba(255, 40, 40, 0.30) 43%, rgba(160, 30, 130, 0.30) 88%, rgba(84, 0, 82, 0.30) 100%);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-sizing: border-box;
+}
+
+#nav-burger-icon {
+    background: url("/images/hamburgermenu.svg");
+    background-size: 1.5em 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#burger-menu {
+    display: flex;
+}
+
+#burger-menu h3 {
+    cursor: pointer;
+}
+
+.fp-logo {
+    width: 30em;
+    margin-bottom: .5em;
+}
+
+.fp-container {
+    background-image: url("/images/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fp-image-box {
+    background: linear-gradient(to bottom, rgba(255, 173, 50, 0.30) 0%, rgba(255, 40, 40, 0.30) 43%, rgba(160, 30, 130, 0.30) 88%, rgba(84, 0, 82, 0.30) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fp-form {
+    margin-top: 2em;
+    width: 300px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fp-form a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fp-form input {
+    height: 3em;
+    background-color: rgba(255, 255, 255, .6);
+    border: none;
+    margin-bottom: 5px;
+    outline-color: white;
+    padding-left: 5px;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(255, 173, 50, 0.30) 0%, rgba(255, 40, 40, 0.30) 43%, rgba(160, 30, 130, 0.30) 88%, rgba(84, 0, 82, 0.30) 100%);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-button {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: grayscale();
+    cursor: pointer;
+}
+
+#modal-profilepic {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+}
+
+#file-selector {
+    visibility: hidden;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    background-color: white;
+    width: 30vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fp-link {
+    color: black;
+}
+
+#requests h1 {
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+#request-btn {
+    cursor: pointer;
+}
+
+.friend-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97vw;
+    margin-left: 4vw;
+}
+
+.friends-user-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4vw;
+    width: 20vw;
+    margin-bottom: 4vw;
+}
+
+.friends-user-container img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.friends-user-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.friends-user-container h2 {}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.wall-box {
+    display: flex;
+    flex-direction: column;
+    width: 31em;
+    margin-left: 11em;
+    margin-top: 2em;
+}
+
+.wall-input {
+    display: flex;
+    flex-direction: column;
+    width: 31em;
+    margin-left: 11em;
+}
+
+.wall-input div {
+    align-self: flex-end;
+}
+
+.message-box {
+    overflow: scroll;
+    height: 70vh;
+    border: black solid;
+    border-width: 1px 1px 0 1px;
+}
+
+.profile-message-box {
+    overflow: scroll;
+    height: 70vh;
+}
+
+.single-message {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.msg-img {
+    height: 10vh;
+    width: 10vh;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+}
+
+.input-box div {
+    align-self: flex-end;
+}
